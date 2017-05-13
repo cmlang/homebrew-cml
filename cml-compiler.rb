@@ -6,7 +6,7 @@ class CmlCompiler < Formula
   desc "The CML Compiler"
   homepage "http://github.com/cmlang"
   url "https://raw.githubusercontent.com/cmlang/cml-releases/master/cml-compiler/cml-compiler-#{VERSION}.zip"
-  sha256 "50b0fcb4fcf796cf965108114a1debd01e9d94217396b8a0b35b8c566df4aa4b"
+  sha256 "4286a9593fff7084d3e4e6c05f3907e6c96b138e483df905c3cf78986ecf41c1"
 
   def install
     inreplace "bin/cml", "##PREFIX##", "#{prefix}/libexec"

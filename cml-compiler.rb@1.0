@@ -1,6 +1,6 @@
 require "formula"
 
-class CmlCompiler < Formula
+class CmlCompilerAT${CML_JOINED_VERSION} < Formula
   VERSION = "1.0"
 
   desc "The CML Compiler"

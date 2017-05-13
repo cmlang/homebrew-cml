@@ -1,16 +1,16 @@
 require "formula"
 
 class CmlCompiler < Formula
-  VERSION = "0.7"
+  VERSION = "0.8"
 
   desc "The CML Compiler"
   homepage "http://github.com/cmlang"
   url "https://raw.githubusercontent.com/cmlang/cml-releases/master/cml-compiler/cml-package-#{VERSION}-distribution.zip"
-  sha256 "38a89752ad4d2cefe4938784ccacdb9ad5cceda2dcdd0363ea1a47c1c7a3c8df"
+  sha256 "5f18121ab64c7a5ac4d9dc00d64738859d91eb32ceed1f06eb0ea6ae909d4d53"
 
   def install
+    inreplace "bin/cml", "##PREFIX##", "#{prefix}"
     libexec.install Dir["*"]
-    libexec.inreplace "bin/cml", "##PREFIX##", "#{prefix}"
     bin.install_symlink libexec/"bin/cml"
   end
 

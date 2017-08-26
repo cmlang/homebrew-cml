@@ -1,12 +1,12 @@
 require "formula"
 
 class CmlCompilerAT1 < Formula
-  VERSION = "1.0"
+  VERSION = "1.1"
 
   desc "The CML Compiler"
   homepage "http://github.com/cmlang"
   url "https://raw.githubusercontent.com/cmlang/cml-releases/master/cml-compiler/cml-compiler-#{VERSION}.zip"
-  sha256 "4286a9593fff7084d3e4e6c05f3907e6c96b138e483df905c3cf78986ecf41c1"
+  sha256 "c31f1bbf4925e23d5cfdd2c5df8fd90edc81cbe64520911961c28a86cd232c70"
 
   def install
     inreplace "bin/cml", "##PREFIX##", "#{prefix}/libexec"

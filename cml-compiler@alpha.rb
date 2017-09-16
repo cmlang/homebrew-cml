@@ -1,6 +1,6 @@
 require "formula"
 
-class CmlCompilerAT2017 < Formula
+class CmlCompilerATalpha < Formula
   VERSION = "2017.09.15-alpha"
 
   desc "The CML Compiler"

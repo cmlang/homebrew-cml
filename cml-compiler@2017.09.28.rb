@@ -1,5 +1,5 @@
 
-class CmlCompilerAlpha < Formula
+class CmlCompilerAT20170928 < Formula
   VERSION = "2017.09.28-alpha"
 
   desc "The CML Compiler"

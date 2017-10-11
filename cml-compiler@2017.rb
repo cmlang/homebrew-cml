@@ -1,11 +1,11 @@
 
 class CmlCompilerAT2017 < Formula
-  VERSION = "2017.10.10"
+  VERSION = "2017.10.03c-alpha"
 
   desc "The CML Compiler"
   homepage "https://github.com/cmlang"
   url "https://raw.githubusercontent.com/cmlang/cml-releases/master/cml-compiler/cml-compiler-#{VERSION}.zip"
-  sha256 "e2b489e20f7c9e59e384019780b25b26b797b466d5ddcded0e7761f81eae58c0"
+  sha256 "eba2892f3f8734bebe6e479bd6163dec65bcc94110ed7efe6d58becc34d57cb7"
 
   def install
     inreplace "bin/cml", "##PREFIX##", "#{prefix}/libexec"
